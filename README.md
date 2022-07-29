@@ -134,12 +134,12 @@ using System.Data.SqlClient;
 
 ## Dapper where in
 
-[SELECT * FROM X WHERE id IN (...) with Dapper ORM](https://stackoverflow.com/questions/8388093/select-from-x-where-id-in-with-dapper-orm)  
-
 ``` C#
 string sql = "SELECT * FROM SomeTable WHERE id IN @ids"
 var results = conn.Query(sql, new { ids = new[] { 1, 2, 3, 4, 5 }});
 ```
+
+[SELECT * FROM X WHERE id IN (...) with Dapper ORM](https://stackoverflow.com/questions/8388093/select-from-x-where-id-in-with-dapper-orm)  
 
 ---
 
