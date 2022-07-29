@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DapperSample.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,8 @@ namespace DapperSample
             new BasicSelectSample().Execute();
 
             new CRUDSample().Execute();
+
+            new SelectSample().Execute();
         }
     }
 }
